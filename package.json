@@ -1,0 +1,20 @@
+{
+  "name": "code-class-position-sticky",
+  "version": "1.0.0",
+  "description": "Code class about the new css property `position: sticky` with exercises.",
+  "main": "",
+  "scripts": {
+    "start": "python -m SimpleHTTPServer 8080",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/kasszz/code-class-postion-sticky.git"
+  },
+  "author": "Casper Boutens <c.boutens@hotmail.com>",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/kasszz/code-class-postion-sticky/issues"
+  },
+  "homepage": "https://github.com/kasszz/code-class-postion-sticky#readme"
+}
