@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8">
+  	<meta name="viewport" content="width=device-width,initial-scale=1">
+    <title>Code Talk Position sticky</title>
+    <link href="https://fonts.googleapis.com/css?family=Roboto:400,700" rel="stylesheet">
+  	<link rel="stylesheet" href="./assets/css/index.css" type="text/css">
+  </head>
+  <body>
+    <div class="hero">
+      <h1 class="hero__title">Blog posts</h1>
+    </div>
+    <div class="layout">
+      <main class="main">
+        <header class="article__header">
+          <h2 class="article__title">Quick prototyping with a component library</h2>
+        </header>
+        <main class="article__content">
+          <p>I am currently working for ABN AMRO on the development of new website templates. During this project, our team follows an agile methodology and uses feedback from customers and stakeholders to iterate on the results. Our development stack is built around the idea of remixing components for the sake of prototyping, rather than for reusability or consistency. Here’s how that is working out for us.</p>
+          <h3>Development driven by usability tests</h3>
+          <p>To validate the design language, tone of voice and desired functionality of the new templates, we carry out usability tests with actual customers of ABN AMRO. This gives us insight in their desires and expectations. Furthermore, we demo the templates during internal gatherings in order to get feedback from different teams. With the obtained feedback, we improve our designs in the next iteration.</p>
+          <h3>Remix components for fast iteration</h3>
+          <p>Using Nunjucks as our templating language and a mix of JSON &amp; Markdown-formatted files, we can easily build new templates with real content. We copy components, remove and remix what we need, and put out a new template in a matter of hours. Bits of JavaScript and CSS animations can usually be adapted to fit a new interaction concept. Then we move things around, switch out content or duplicate templates for comparison.</p>
+          <p>This requires some solid core styling, so that the flow of the page isn’t broken by “unintended use” of a component. And while that holds true for any type of modular development, our pragmatic way of writing throwaway code (literally) makes iterations fast and easy. We simply don’t have to worry about creating technical debt.</p>
+          <h3>Effective deployment with Heroku</h3>
+          <p>The resulting pages are then pushed to Heroku. This way everything we built is available to the whole team to get a feeling for how the redesigned pages look in various browsers. Also, we use the Heroku environment for internal demos and usability testing in ABN AMRO’s usability lab.</p>
+          <p>Combining the power of the feedback loop with component-based development, we can build better templates fast. Currently, the templates are incorporated as an A/B-test in the live website. We hope to see a real result in conversion as well. Keep you posted!</p>
+        </main><!--
+        --><footer class="article__author">
+          <img class="article__avatar" src="https://www.datocms-assets.com/2651/1500886350-bas.jpg?fit=crop&h=135&w=135" alt="">
+          <span class="article__name">by Bas</span>
+          <time datetime="2017-10-04T00:00:00.000Z" class="blog-post-meta">04 October 2017</time>
+        </footer>
+        <header class="article__header">
+          <h2 class="article__title">Fighting front-end fatigue with tooling recipes</h2>
+        </header>
+        <main class="article__content">
+          <p>As a generally hyper-enthusiastic person I don't seem to exhibit any symptoms, but front-end fatigue appears widely spread. Maybe I’m lucky: there are 20 of us here, helping me filter through the daily onslaught of new web frameworks, libraries and tools. We love all of it, because this new technology enables us to do more on the web. At the same time, figuring out what to use when, or why, can be a daunting task.</p>
+          <p>To help fight this front-end fatigue, we at De Voorhoede started a repository of tooling recipes. These pre-configured setups make it easier for us to use modern technology in any project. Each recipe works out of the box and is accompanied by an extensive readme to get you up and running.</p>
+          <h3>Why not Less, Sass, Webpack, Browserify, Angular, React, Preact, Vue…?</h3>
+          <p>We chose these technologies for a reason. It’s unavoidable that browser software lags behind the specifications and recommendations for HTML, CSS and JavaScript. So, many developers choose to ignore the spec and develop all kinds of compelling tech — so that others can build impressive stuff on top — but we prefer to use technology that only bridges the gap between the specifications and the browser’s adoption rate. As soon as browsers catch up, we take out the middleware. This keeps our tech stack clean and simple and our technical debt at a minimum.</p>
+          <h3>1. Next-gen CSS with PostCSS</h3>
+          <p>The latest additions to the CSS spec enable us to write more effective stylesheets. We can use CSS variables (or custom properties as they’re officially called), color functions and advanced calculations. Using @import lets us write modular CSS — but unless you use Server Push, it comes with a performance penalty: the page is blocked from rendering while downloading of all those CSS files. Also, older browsers don’t know what to do with all these new CSS features. That’s where the PostCSS process and watch recipe comes in.</p>
+          <h3>2. Lightweight, modular ES6 with Rollup</h3>
+          <p>With the ES2015/2016 additions to the JavaScript language, we can write more powerful and expressive scripts. ES modules finally gave us a standardised way to write modular JavaScript. Sadly, browsers don’t quite know how to load ES modules. And when a browser doesn’t know an ES feature, it will throw and error and break your website.</p>
+          <p>With the Rollup bundle and watch recipe we can bundle our ES modules for the browser and transpile new ES2015/2016 features to ES5 code. This way we can write modern JavaScript and turn it into something all browsers understand.</p>
+          <h3>3. Express with Node­mon and Browsersync</h3>
+          <p>Node.js with Express is our server technology of choice. While we’re developing we want to see the changes we make as quickly as possible — regardless of changes to server or browser code. At the same time, we want the site to be highly performant in production. Our recipe for Express with Nodemon and Browsersync solves both cases.</p>
+        </main><!--
+        --><footer class="article__author">
+          <img class="article__avatar" src="https://www.datocms-assets.com/2850/1505982520-jasper.jpg?fit=crop&h=135&w=135" alt="">
+          <span class="article__name">by Jasper</span>
+          <time datetime="2017-03-17T00:00:00.000Z" class="blog-post-meta">17 March 2017</time>
+        </footer>
+        <header class="article__header">
+          <h2 class="article__title">Artsy piece of data</h2>
+        </header>
+        <main class="article__content">
+          <p>Here at De Voorhoede, we primarily write practical front-end code. Imagine our delight when NPO asked us to create a data visualisation: an artistic view of all streams currently playing on the npo.nl platform. All based on realtime data. Now that is a challenge we like!</p>
+          <p>The television landscape is changing. We move from linear to on-demand. Watch whatever you want, whenever you want. The NPO platform plays a huge role in The Netherlands. You can find anything, from live streams of the traditional channels to specialty channels and episodic content.</p>
+          <h3>From data to visualisation</h3>
+          <p>Together with Hike One and the NPO Marketing Intelligence Team we created a format and implemented it in a couple of days.</p>
+          <p>Every stream image gets its place on the screen. The more popular the stream, the bigger that image will be. When another viewer opens the stream the image pulses on screen. Now you have an almost living representation of currently watched streams.</p>
+          <p>Every data point is delivered via a WebSocket connection. A data point can be anything like the start of a stream or a heartbeat. On a set interval, every video player signals it is still playing. That’s our heartbeat. All these data points (of which there are a lot) make up the data stream our visualisation hooks into.</p>
+          <p>Put this visualisation on a big screen and you’ve got a beautiful and handy overview of what is being watched!</p>
+        </main><!--
+        --><footer class="article__author">
+          <img class="article__avatar" src="https://www.datocms-assets.com/2518/1498466218-peter-l.jpg?fit=crop&h=135&w=135" alt="">
+          <span class="article__name">by Peter</span>
+          <time datetime="2017-02-03T00:00:00.000Z" class="blog-post-meta">03 February 2017</time>
+        </footer>
+      </main><!--
+      --><div class="advertisement">
+        <img src="./assets/images/sidebar-ad.jpg" alt="">
+      </div>
+    </div>
+  </body>
+</html>

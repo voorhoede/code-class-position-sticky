@@ -9,12 +9,12 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/kasszz/code-class-postion-sticky.git"
+    "url": "git+https://github.com/kasszz/code-class-position-sticky.git"
   },
   "author": "Casper Boutens <c.boutens@hotmail.com>",
   "license": "ISC",
   "bugs": {
-    "url": "https://github.com/kasszz/code-class-postion-sticky/issues"
+    "url": "https://github.com/kasszz/code-class-position-sticky/issues"
   },
-  "homepage": "https://github.com/kasszz/code-class-postion-sticky#readme"
+  "homepage": "https://github.com/kasszz/code-class-position-sticky#readme"
 }
